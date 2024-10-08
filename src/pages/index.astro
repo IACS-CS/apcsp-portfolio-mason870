@@ -1,22 +1,35 @@
 ---
 import Page from "../components/Page.astro";
+import NavItem from "../components/NavItem.astro";
 ---
 
-<Page title="FIXME Portfolio">
+<Page title="Mason's Portfolio">
   <h1>
-    FIXME Portfolio
+    Mason's Portfolio
   </h1>
   <h2>Project Menu</h2>
   <nav>
     <ul>
-      <li>
-        <a href="./projects/binary-search/"> 
-          Binary Search Project 
-        </a>
-      </li>
-      <!-- More projects to come soon! -->
-    </ul>
-  </nav>
+      <NavItem
+         title="Binary Search Project"
+         link="/projects/binary-search/"
+         imageSrc="/images/binary-search.png"
+         blurb="Learn about the binary search algorithm and its implementation."
+       />
+
+       <NavItem
+         title="APCSP Portfolio"
+         link="/projects/portfolio/"
+         imageSrc="/images/portfolio.png"
+         blurb="A showcase of all my AP Computer Science Principles projects."
+       />
+
+       <!-- Add more projects here in the future -->
+     </ul>
+   </nav>
+   ```
+
+---
   <h2>About Me</h2>
-  <p>All About me...</p>
+  <p>All About me, my name is mason im a junior from innvation academy charter school. My hobbies and personal interest include sports like the NFL and NBA. Activites like hiking, the gym and playing flagfootball</p> 
 </Page>
