@@ -11,20 +11,21 @@ import "../scripts/main.js";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initialScale=1.0" />
-    <script src="../scripts/main.js"></script>
+    <script src="../scripts/main.js"></script><script>
+  import "../scripts/browser.js";
+</script>
     <title>
       {title}
     </title>
     <slot name="head" />
   </head>
-  <body class="container">
-    <slot /> 
-    ```astro 
-    <footer> 
-    Page by <b>Mason Cayer</b>, 
-    last updaed October, 2024. 
-    All rights reserved 
+  <body class="container"><canvas class="background"></canvas>
+    <slot />
+    
+    <footer>
+      Page by <b>Mason Cayer</b>, last updaed October, 2024. All rights reserved
     </footer>
-    ```
+    
   </body>
 </html>
+
