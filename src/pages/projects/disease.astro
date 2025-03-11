@@ -1,0 +1,18 @@
+---
+import Project from "../../components/Disease.astro";
+---
+
+<Project
+  title="DiseaseProject"
+  assignment="model a real like sickness"
+>
+  <p>My project was super fun</p>
+  <p>Sure, here's a brief explanation of the key elements represented in your simulation: 1. **Infection Spread**: The simulation models the spread of the flu with a 50% chance of getting infected when paired up with a sick person. This is controlled by the `infectionChance` parameter. 2. **Incubation Period**: The simulation includes an incubation period, which is the time between exposure to the virus and the onset of symptoms. This period is randomly set between 1 and 2 rounds for each infected individual. During this period, the individual is infected but cannot infect others. 3. **Quarantine Period**: After the incubation period, there is a quarantine period where infected individuals are isolated to prevent further spread. This period is set to 3 rounds by default. 4. **Immunity**: There is a chance that an infected individual will become immune after recovering from the infection. This is controlled by the `immunityChance` parameter. Immune individuals are represented by a syringe emoji and cannot be infected again. 5. **Quarantine Groups**: Infected individuals have a chance of being quarantined, which is controlled by the `quarantineChance` parameter. Quarantined individuals are represented by a house emoji and are isolated from the rest of the population. 6. **Population Dynamics**: The simulation allows you to adjust the size of the population and observe how the disease spreads through different population sizes. 7. **Visualization**: The simulation uses emojis to represent the different states of individuals: - 😀: Healthy person - 🤧: Newly infected person - 🤢: Infected person - 💉: Immune person - 🏠: Quarantined person 8. **Statistics Tracking**: The simulation tracks and displays statistics such as the total number of infected, newly infected, immune, and quarantined individuals over time. These elements together provide a comprehensive model of how the flu can spread through a population, the impact of quarantine and immunity, and how different parameters can affect the dynamics of the disease spread.. </p>
+  <!-- Replace src="" on iframe with address of your published
+   project :-) -->
+  <iframe
+    src="https://shiny-happiness-x5vvrjvp454qh9xqq-5173.app.github.dev/"
+    title="The Flu"
+    width="100%"
+    height="800px"></iframe>
+</Project>
